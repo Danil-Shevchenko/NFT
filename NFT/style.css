@@ -48,7 +48,7 @@ body{
 .card__image {
     position: relative;
     width: 100%;
-    height: 300px;
+    aspect-ratio: 1 / 1;
     overflow: hidden;
     background-color: var(--Cyan);
     border-radius: 10px;
@@ -78,10 +78,10 @@ body{
     opacity: 0.5;
 }
 
-
-
 .card__name {
     color: var(--White);
+    font-size: 22px;
+    margin: 25px 0 25px 0;
 }
 
 
@@ -101,14 +101,15 @@ body{
 
 
 .card__ether-icon {
-    margin-right: 10px;
+    margin-right: 5px;
 }
 .card__ether-price {
     display: flex;
     color: var(--Cyan);
+    font-weight: 600;
 }
 .card__icon-clock {
-    margin-right: 10px;
+    margin-right: 5px;
 }
 .card__time-left {
     display: flex;
@@ -126,7 +127,7 @@ hr {
     border-radius: 50%;
 }
 .footer__created {
-    margin-left: 20px;
+    margin-left: 10px;
 }
 .footer__name {
     color: var(--White);
@@ -140,6 +141,13 @@ hr {
 @media screen and (max-width: 425px) {
     body{
         padding: 0 15px 0 15px;
+    }
+    .card{
+        width: 90%;
+    }
+    .card__image{
+        height: auto;
+        
     }
 }
 
